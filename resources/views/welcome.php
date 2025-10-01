@@ -503,11 +503,8 @@
                 <h1 class="hero-title-blueprint" data-aos="fade-up" data-aos-delay="200" style="font-size: clamp(3rem, 6vw, 5rem); font-weight: 300; line-height: 1.1; margin-bottom: 32px; color: var(--text-primary);">
                     AI Speed.<br>Expert Validation.<br>Production Results.
                 </h1>
-                <p class="hero-subtitle-blueprint" data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; margin-bottom: 16px; line-height: 1.6; max-width: 700px;">
+                <p class="hero-subtitle-blueprint" data-aos="fade-up" data-aos-delay="400" style="font-size: 1.2rem; margin-bottom: 32px; line-height: 1.6; max-width: 700px;">
                     Most developers using AI can't debug what they build. I close that gap with 40 years of pattern recognition.
-                </p>
-                <p class="hero-subtitle-blueprint" data-aos="fade-up" data-aos-delay="450" style="font-size: 1.1rem; margin-bottom: 32px; line-height: 1.6; max-width: 700px; color: var(--line-primary); font-weight: 600;">
-                    See the proof below.
                 </p>
                 <div class="story-highlight" data-aos="fade-up" data-aos-delay="500" style="max-width: 700px; margin-bottom: 32px; background: rgba(126, 179, 211, 0.1); border-left: 4px solid rgba(126, 179, 211, 0.6); padding: 20px; border-radius: 8px;">
                     <p style="font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin: 0; font-family: var(--font-technical);">
