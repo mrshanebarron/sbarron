@@ -566,7 +566,7 @@
                 <!-- Domain Registration -->
                 <div data-aos="fade-up" data-aos-delay="200" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-secondary); padding: 40px; position: relative; transition: var(--transition);">
                     <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
-                        <i class="fa-duotone fa-thin fa-globe" style="font-size: 24px; color: var(--line-primary);"></i>
+                        <i class="fa-duotone fa-thin fa-globe" style="font-size: 28px; color: var(--line-primary);"></i>
                     </div>
                     <h3 style="font-family: var(--font-technical); font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
                         Domain Registration
@@ -576,15 +576,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-bolt-lightning" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-bolt-lightning" style="color: var(--line-primary); font-size: 18px;"></i>
                             Lightning-fast DNS updates
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-sliders" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-sliders" style="color: var(--line-primary); font-size: 18px;"></i>
                             Full DNS management
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-shield-check" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-shield-check" style="color: var(--line-primary); font-size: 18px;"></i>
                             Privacy protection included
                         </li>
                     </ul>
@@ -593,7 +593,7 @@
                 <!-- Laravel Hosting -->
                 <div data-aos="fade-up" data-aos-delay="300" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-secondary); padding: 40px; position: relative; transition: var(--transition);">
                     <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
-                        <i class="fa-duotone fa-thin fa-server" style="font-size: 24px; color: var(--line-primary);"></i>
+                        <i class="fa-duotone fa-thin fa-server" style="font-size: 28px; color: var(--line-primary);"></i>
                     </div>
                     <h3 style="font-family: var(--font-technical); font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
                         Managed Hosting
@@ -603,15 +603,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-layer-group" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-layer-group" style="color: var(--line-primary); font-size: 18px;"></i>
                             LEMP stack optimized for Laravel
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-lock-keyhole" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-lock-keyhole" style="color: var(--line-primary); font-size: 18px;"></i>
                             Free SSL certificates
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-arrows-rotate" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-arrows-rotate" style="color: var(--line-primary); font-size: 18px;"></i>
                             Automated deployments
                         </li>
                     </ul>
@@ -620,7 +620,7 @@
                 <!-- Custom Development -->
                 <div data-aos="fade-up" data-aos-delay="400" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-primary); padding: 40px; position: relative; transition: var(--transition); box-shadow: 0 4px 20px rgba(126, 179, 211, 0.15);">
                     <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
-                        <i class="fa-duotone fa-thin fa-code" style="font-size: 24px; color: var(--line-primary);"></i>
+                        <i class="fa-duotone fa-thin fa-code" style="font-size: 28px; color: var(--line-primary);"></i>
                     </div>
                     <div style="position: absolute; top: 10px; right: 10px; background: var(--line-primary); color: white; padding: 4px 12px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
                         Core Service
@@ -633,15 +633,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-books" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-books" style="color: var(--line-primary); font-size: 18px;"></i>
                             Laravel + TALL stack expertise
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-grid-2" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-grid-2" style="color: var(--line-primary); font-size: 18px;"></i>
                             Filament admin panels
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-eye" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-eye" style="color: var(--line-primary); font-size: 18px;"></i>
                             Working demos before you hire
                         </li>
                     </ul>
@@ -650,7 +650,7 @@
                 <!-- Ongoing Support -->
                 <div data-aos="fade-up" data-aos-delay="500" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-secondary); padding: 40px; position: relative; transition: var(--transition);">
                     <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
-                        <i class="fa-duotone fa-thin fa-headset" style="font-size: 24px; color: var(--line-primary);"></i>
+                        <i class="fa-duotone fa-thin fa-headset" style="font-size: 28px; color: var(--line-primary);"></i>
                     </div>
                     <h3 style="font-family: var(--font-technical); font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
                         Ongoing Support
@@ -660,15 +660,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-screwdriver-wrench" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-screwdriver-wrench" style="color: var(--line-primary); font-size: 18px;"></i>
                             Server & DNS management
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-bug" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-bug" style="color: var(--line-primary); font-size: 18px;"></i>
                             Bug fixes & updates
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-duotone fa-thin fa-clock" style="color: var(--line-primary); font-size: 16px;"></i>
+                            <i class="fa-duotone fa-thin fa-clock" style="color: var(--line-primary); font-size: 18px;"></i>
                             Priority response times
                         </li>
                     </ul>
