@@ -437,6 +437,10 @@
                 </div>
                 <!-- Navigation Links -->
                 <div style="display: flex; gap: 48px; align-items: center;">
+                <a href="#services" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent;">
+                    <i class="fa-duotone fa-thin fa-briefcase-blank" style="font-size: 16px;"></i>
+                    Services
+                </a>
                 <a href="#approach" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent;">
                     <i class="fa-duotone fa-thin fa-chess-king" style="font-size: 16px;"></i>
                     My Approach
@@ -464,6 +468,10 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" onclick="closeMobileMenu()">
+            <i class="fa-duotone fa-thin fa-briefcase-blank" style="font-size: 16px; margin-right: 12px;"></i>
+            Services
+        </a>
         <a href="#approach" onclick="closeMobileMenu()">
             <i class="fa-duotone fa-thin fa-chess-king" style="font-size: 16px; margin-right: 12px;"></i>
             My Approach
@@ -542,6 +550,145 @@
                 }
             }
         </style>
+    </section>
+
+    <!-- Complete Services Section -->
+    <section id="services" style="padding: 100px 0; background: linear-gradient(135deg, rgba(126, 179, 211, 0.05) 0%, rgba(248, 250, 252, 1) 100%); position: relative;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 class="section-title-blueprint" data-aos="fade-up" style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; color: var(--text-primary); margin-bottom: 20px;">
+                    Everything Your Project Needs
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200" style="font-family: var(--font-technical); font-size: 1.2rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                    One partner for your entire digital presence. From domain to deployment to ongoing support.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <!-- Domain Registration -->
+                <div data-aos="fade-up" data-aos-delay="200" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-secondary); padding: 40px; position: relative; transition: var(--transition);">
+                    <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
+                        <i class="fa-duotone fa-thin fa-globe" style="font-size: 24px; color: var(--line-primary);"></i>
+                    </div>
+                    <h3 style="font-family: var(--font-technical); font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
+                        Domain Registration
+                    </h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; font-size: 0.95rem;">
+                        Fast DNS propagation through Name.com. Competitive pricing with expert management included.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Lightning-fast DNS updates
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Full DNS management
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Privacy protection included
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Laravel Hosting -->
+                <div data-aos="fade-up" data-aos-delay="300" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-secondary); padding: 40px; position: relative; transition: var(--transition);">
+                    <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
+                        <i class="fa-duotone fa-thin fa-server" style="font-size: 24px; color: var(--line-primary);"></i>
+                    </div>
+                    <h3 style="font-family: var(--font-technical); font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
+                        Managed Hosting
+                    </h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; font-size: 0.95rem;">
+                        Production-ready Laravel hosting on optimized infrastructure. No DevOps headaches.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            LEMP stack optimized for Laravel
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Free SSL certificates
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Automated deployments
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Custom Development -->
+                <div data-aos="fade-up" data-aos-delay="400" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-primary); padding: 40px; position: relative; transition: var(--transition); box-shadow: 0 4px 20px rgba(126, 179, 211, 0.15);">
+                    <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
+                        <i class="fa-duotone fa-thin fa-code" style="font-size: 24px; color: var(--line-primary);"></i>
+                    </div>
+                    <div style="position: absolute; top: 10px; right: 10px; background: var(--line-primary); color: white; padding: 4px 12px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+                        Core Service
+                    </div>
+                    <h3 style="font-family: var(--font-technical); font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
+                        Custom Development
+                    </h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; font-size: 0.95rem;">
+                        AI-accelerated development with 40 years of validation expertise. Production-ready, every time.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Laravel + TALL stack expertise
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Filament admin panels
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Working demos before you hire
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Ongoing Support -->
+                <div data-aos="fade-up" data-aos-delay="500" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-secondary); padding: 40px; position: relative; transition: var(--transition);">
+                    <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
+                        <i class="fa-duotone fa-thin fa-headset" style="font-size: 24px; color: var(--line-primary);"></i>
+                    </div>
+                    <h3 style="font-family: var(--font-technical); font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.5px;">
+                        Ongoing Support
+                    </h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; font-size: 0.95rem;">
+                        One person to call for everything. DNS changes, bug fixes, feature updates—all handled.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Server & DNS management
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Bug fixes & updates
+                        </li>
+                        <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
+                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            Priority response times
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Value Proposition -->
+            <div data-aos="fade-up" data-aos-delay="600" style="margin-top: 60px; text-align: center; background: rgba(126, 179, 211, 0.1); border: 2px solid rgba(126, 179, 211, 0.3); padding: 40px; border-radius: 12px;">
+                <h3 style="font-family: var(--font-technical); font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px;">
+                    <i class="fa-duotone fa-thin fa-shield-check" style="color: var(--line-primary); margin-right: 12px;"></i>
+                    The Complete Advantage
+                </h3>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.7; max-width: 900px; margin: 0 auto;">
+                    Most developers hand off projects and disappear. I own your entire stack—from domain registration to production deployment.
+                    <strong style="color: var(--line-primary);">One partner. One invoice. Zero headaches.</strong>
+                </p>
+            </div>
+        </div>
     </section>
 
     <!-- Upwork Clients Section -->
