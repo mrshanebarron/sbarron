@@ -77,9 +77,6 @@
     <!-- AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/03fa4a3daf.js" crossorigin="anonymous"></script>
-
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -1621,5 +1618,8 @@ const backToTopButton = document.getElementById("backToTop");
             }
         });
     </script>
+
+    <!-- Font Awesome Kit - Load after DOM -->
+    <script src="https://kit.fontawesome.com/03fa4a3daf.js" crossorigin="anonymous"></script>
 </body>
 </html>
