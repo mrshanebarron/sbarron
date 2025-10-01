@@ -274,6 +274,11 @@
                 display: none;
             }
 
+            /* Services grid to single column on mobile */
+            #services > div > div:nth-of-type(2) {
+                grid-template-columns: 1fr !important;
+            }
+
             /* Adjust brand on mobile */
             .navbar-blueprint div > div:first-child > div:first-child {
                 width: 36px !important;
@@ -564,7 +569,7 @@
                 </p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
                 <!-- Domain Registration -->
                 <div data-aos="fade-up" data-aos-delay="200" class="service-card" style="background: var(--blueprint-paper); border: var(--line-weight-bold) solid var(--line-secondary); padding: 40px; position: relative; transition: var(--transition);">
                     <div style="position: absolute; top: -12px; left: 20px; background: var(--blueprint-paper); padding: 0 12px;">
