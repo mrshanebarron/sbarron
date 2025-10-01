@@ -574,7 +574,7 @@
                     <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px; font-size: 0.95rem;">
                         Fast DNS propagation through Name.com. Competitive pricing with expert management included.
                     </p>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
+                    <ul style="list-style: none; padding: 0; margin: 0 0 20px 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
                             <i class="fa-duotone fa-thin fa-bolt-lightning" style="color: var(--line-primary); font-size: 18px;"></i>
                             Lightning-fast DNS updates
@@ -588,6 +588,10 @@
                             Privacy protection included
                         </li>
                     </ul>
+                    <a href="/domains/search" style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, var(--line-primary) 0%, #6b95b3 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.2s;">
+                        <i class="fa-duotone fa-thin fa-magnifying-glass" style="margin-right: 8px;"></i>
+                        Search Domains
+                    </a>
                 </div>
 
                 <!-- Laravel Hosting -->
