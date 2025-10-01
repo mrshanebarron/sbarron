@@ -1429,22 +1429,40 @@
     </button>
 
     <!-- Footer - Technical Documentation -->
-    <footer style="background: rgba(248, 250, 252, 0.98); color: var(--text-secondary); text-align: center; padding: 40px 0; border-top: 2px solid var(--line-primary); position: relative; backdrop-filter: blur(12px);">
+    <footer style="background: rgba(248, 250, 252, 0.98); color: var(--text-secondary); text-align: center; padding: 60px 0 40px 0; border-top: 2px solid var(--line-primary); position: relative; backdrop-filter: blur(12px);">
         <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 100px; height: var(--line-weight-bold); background: var(--line-primary);"></div>
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 40px;">
+
+            <!-- GitHub Sponsors Section -->
+            <div style="margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(107, 91, 115, 0.2);">
+                <div style="display: inline-flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <i class="fa-brands fa-github" style="font-size: 20px; color: var(--text-primary);"></i>
+                    <h3 style="font-family: var(--font-technical); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 0; color: var(--text-primary);">
+                        Free Laravel Components
+                    </h3>
+                </div>
+                <p style="font-family: var(--font-technical); font-size: 13px; color: var(--text-secondary); margin: 0 0 16px 0; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                    I share open-source Laravel components and tools. If you find them useful, consider supporting development.
+                </p>
+                <a href="https://github.com/sponsors/mrshanebarron" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #24292e; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; transition: var(--transition);">
+                    <i class="fa-solid fa-heart" style="color: #ea4aaa;"></i>
+                    Sponsor on GitHub
+                </a>
+            </div>
+
             <p style="font-family: var(--font-technical); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin: 0;">
                 © 2025 Shane Barron. Strategic Technology Consulting.
             </p>
             <p style="font-family: var(--font-technical); font-size: 11px; color: var(--text-muted); margin: 8px 0 0 0;">
                 40 Years of Systematic Problem-Solving
+            </p>
             <p style="font-family: var(--font-technical); font-size: 10px; color: var(--text-secondary); margin: 16px 0 0 0; opacity: 0.8;">
                 Built with AI-powered DevOps automation and strategic AI agent foresight
+            </p>
             <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(107, 91, 115, 0.2);">
                 <a href="/privacy.html" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-size: 11px; margin-right: 20px; transition: var(--transition);">Privacy Policy</a>
                 <a href="/terms.html" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-size: 11px; transition: var(--transition);">Terms of Service</a>
             </div>
-            </p>
-            </p>
         </div>
     </footer>
 
