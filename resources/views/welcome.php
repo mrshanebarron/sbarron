@@ -583,15 +583,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-bolt-lightning" style="color: var(--line-primary); font-size: 16px;"></i>
                             Lightning-fast DNS updates
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-sliders" style="color: var(--line-primary); font-size: 16px;"></i>
                             Full DNS management
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-shield-check" style="color: var(--line-primary); font-size: 16px;"></i>
                             Privacy protection included
                         </li>
                     </ul>
@@ -610,15 +610,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-layer-group" style="color: var(--line-primary); font-size: 16px;"></i>
                             LEMP stack optimized for Laravel
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-lock-keyhole" style="color: var(--line-primary); font-size: 16px;"></i>
                             Free SSL certificates
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-arrows-rotate" style="color: var(--line-primary); font-size: 16px;"></i>
                             Automated deployments
                         </li>
                     </ul>
@@ -640,15 +640,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-books" style="color: var(--line-primary); font-size: 16px;"></i>
                             Laravel + TALL stack expertise
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-grid-2" style="color: var(--line-primary); font-size: 16px;"></i>
                             Filament admin panels
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-eye" style="color: var(--line-primary); font-size: 16px;"></i>
                             Working demos before you hire
                         </li>
                     </ul>
@@ -667,15 +667,15 @@
                     </p>
                     <ul style="list-style: none; padding: 0; margin: 0;">
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-screwdriver-wrench" style="color: var(--line-primary); font-size: 16px;"></i>
                             Server & DNS management
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-bug" style="color: var(--line-primary); font-size: 16px;"></i>
                             Bug fixes & updates
                         </li>
                         <li style="padding: 8px 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; align-items: center; gap: 10px;">
-                            <i class="fa-solid fa-check" style="color: #22c55e;"></i>
+                            <i class="fa-duotone fa-thin fa-clock" style="color: var(--line-primary); font-size: 16px;"></i>
                             Priority response times
                         </li>
                     </ul>
