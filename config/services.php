@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'namecom' => [
+        'username' => env('NAMECOM_USERNAME'),
+        'token' => env('NAMECOM_TOKEN'),
+    ],
+
 ];
