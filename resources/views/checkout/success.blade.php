@@ -1,5 +1,13 @@
-<x-layouts.app title="Order Complete - sbarron.com" :hideNav="true" :hideFooter="true">
-    <x-slot:styles>
+@extends('layouts.app')
+
+@section('title', 'Order Complete - sbarron.com')
+
+@php
+    $hideNav = true;
+    $hideFooter = true;
+@endphp
+
+@section('styles')
         <style>
             .success-container {
                 max-width: 600px;
@@ -101,8 +109,9 @@
                 line-height: 1.8;
             }
         </style>
-    </x-slot:styles>
+@endsection
 
+@section('content')
     <div class="success-container">
         <div class="success-icon">
             <i class="fa-duotone fa-thin fa-circle-check" style="font-size: 60px; color: white;"></i>
@@ -139,4 +148,4 @@
             </a>
         </div>
     </div>
-</x-layouts.app>
+@endsection

@@ -1,3 +1,12 @@
-<x-layouts.app title="Checkout - sbarron.com" :hideNav="true" :hideFooter="true">
+@extends('layouts.app')
+
+@section('title', 'Checkout - sbarron.com')
+
+@php
+    $hideNav = true;
+    $hideFooter = true;
+@endphp
+
+@section('content')
     @livewire('checkout')
-</x-layouts.app>
+@endsection

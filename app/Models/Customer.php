@@ -47,6 +47,11 @@ class Customer extends Model
         return $this->hasMany(Order::class);
     }
 
+    public function hostingServices(): HasMany
+    {
+        return $this->hasMany(HostingService::class);
+    }
+
     public function getFullNameAttribute(): string
     {
         return $this->user->name;

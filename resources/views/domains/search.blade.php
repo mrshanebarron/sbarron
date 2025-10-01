@@ -1,4 +1,8 @@
-<x-layouts.app title="Domain Search - sbarron.com">
+@extends('layouts.app')
+
+@section('title', 'Domain Search - sbarron.com')
+
+@section('content')
     @livewire('domain-search')
     @livewire('shopping-cart')
-</x-layouts.app>
+@endsection

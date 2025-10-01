@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $title ?? 'sbarron.com' }}</title>
+    <title>@yield('title', 'sbarron.com')</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -178,10 +178,10 @@
         }
     </style>
 
-    {{ $styles ?? '' }}
+    @yield('styles')
 </head>
 <body>
-    @if(!isset($hideNav) || !$hideNav)
+    @if(!isset($hideNav) || $hideNav !== true)
     <!-- Navigation -->
     <nav class="navbar-blueprint">
         <div class="container">
@@ -220,9 +220,9 @@
     @endif
 
     <!-- Main Content -->
-    {{ $slot }}
+    @yield('content')
 
-    @if(!isset($hideFooter) || !$hideFooter)
+    @if(!isset($hideFooter) || $hideFooter !== true)
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -243,6 +243,6 @@
 
     @livewireScripts
 
-    {{ $scripts ?? '' }}
+    @yield('scripts')
 </body>
 </html>
