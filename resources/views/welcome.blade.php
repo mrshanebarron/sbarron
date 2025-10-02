@@ -1095,33 +1095,23 @@
             <!-- Contact Options -->
             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 60px;">
 
-                <!-- Contact Form -->
-                <div class="contact-form-blueprint border-4 rounded-2xl p-10 relative" style="border-color: #b8a294 !important;">
+                <!-- Email Contact -->
+                <div class="contact-form-blueprint border-4 rounded-2xl p-10 text-center relative" style="border-color: #b8a294 !important;">
                     <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--blueprint-paper); padding: 0 16px; font-family: var(--font-technical); font-size: 11px; font-weight: 600; color: var(--line-primary); text-transform: uppercase; letter-spacing: 1px;">
-                        SEND MESSAGE
+                        EMAIL ME
                     </div>
-                    <h3 style="font-family: var(--font-blueprint); font-size: 1.4rem; font-weight: 600; color: var(--text-primary); margin-bottom: 24px; text-align: center;">
-                        Contact Me Directly
-                    </h3>
-                    <form action="/contact" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-                        @csrf
-                        <div>
-                            <label style="display: block; font-family: var(--font-technical); font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px;">Name</label>
-                            <input type="text" name="name" required style="width: 100%; padding: 12px; border: 2px solid var(--line-secondary); border-radius: 8px; font-family: var(--font-technical); font-size: 0.95rem; background: white;">
-                        </div>
-                        <div>
-                            <label style="display: block; font-family: var(--font-technical); font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px;">Email</label>
-                            <input type="email" name="email" required style="width: 100%; padding: 12px; border: 2px solid var(--line-secondary); border-radius: 8px; font-family: var(--font-technical); font-size: 0.95rem; background: white;">
-                        </div>
-                        <div>
-                            <label style="display: block; font-family: var(--font-technical); font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px;">Message</label>
-                            <textarea name="message" required rows="5" style="width: 100%; padding: 12px; border: 2px solid var(--line-secondary); border-radius: 8px; font-family: var(--font-technical); font-size: 0.95rem; background: white; resize: vertical;"></textarea>
-                        </div>
-                        <button type="submit" style="padding: 14px 28px; background: var(--line-primary); color: white; border: none; border-radius: 8px; font-family: var(--font-technical); font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; transition: var(--transition);">
-                            <i class="fa-duotone fa-thin fa-paper-plane" style="margin-right: 8px;"></i>
-                            Send Message
-                        </button>
-                    </form>
+                    <div style="margin-bottom: 24px;">
+                        <h3 style="font-family: var(--font-blueprint); font-size: 1.4rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px;">
+                            Contact Me Directly
+                        </h3>
+                        <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 24px;">
+                            Reach out via email to discuss your project requirements and see how I can help.
+                        </p>
+                    </div>
+                    <a href="mailto:mrshanebarron@gmail.com" class="rounded-lg" style="display: inline-flex; align-items: center; gap: 12px; background: var(--line-primary); color: white; padding: 16px 32px; text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; transition: var(--transition);">
+                        <i class="fa-duotone fa-thin fa-envelope" style="font-size: 14px;"></i>
+                        Email Me
+                    </a>
                 </div>
 
                 <!-- Upwork Hiring -->
