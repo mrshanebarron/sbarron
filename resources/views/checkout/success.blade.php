@@ -12,8 +12,8 @@
             .success-container {
                 max-width: 600px;
                 margin: 100px auto;
-                background: white;
-                border: 2px solid #e2e8f0;
+                background: var(--blueprint-paper);
+                border: var(--line-weight-bold) solid var(--line-secondary);
                 border-radius: 20px;
                 padding: 60px 40px;
                 text-align: center;
@@ -23,24 +23,27 @@
                 width: 100px;
                 height: 100px;
                 margin: 0 auto 30px;
-                background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+                background: linear-gradient(135deg, var(--line-success) 0%, #38a169 100%);
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                box-shadow: 0 8px 24px rgba(72, 187, 120, 0.3);
+                box-shadow: 0 8px 24px rgba(34, 197, 94, 0.3);
             }
 
             h1 {
+                font-family: var(--font-technical);
                 font-size: 36px;
                 font-weight: 700;
-                color: #1a202c;
+                color: var(--text-primary);
                 margin-bottom: 16px;
+                letter-spacing: -1px;
             }
 
             p {
+                font-family: var(--font-blueprint);
                 font-size: 18px;
-                color: #4a5568;
+                color: var(--text-secondary);
                 line-height: 1.6;
                 margin-bottom: 40px;
             }
@@ -53,12 +56,13 @@
             }
 
             .button {
+                font-family: var(--font-technical);
                 padding: 14px 28px;
                 border-radius: 10px;
                 font-size: 16px;
                 font-weight: 600;
                 text-decoration: none;
-                transition: all 0.2s;
+                transition: var(--transition);
                 display: inline-flex;
                 align-items: center;
                 gap: 8px;
@@ -67,7 +71,7 @@
             }
 
             .button-primary {
-                background: linear-gradient(135deg, #7eb3d3 0%, #6b95b3 100%);
+                background: linear-gradient(135deg, var(--line-secondary) 0%, #6b95b3 100%);
                 color: white;
             }
 
@@ -77,18 +81,19 @@
             }
 
             .button-secondary {
-                background: #f7fafc;
-                color: #1a202c;
-                border: 2px solid #e2e8f0;
+                background: white;
+                color: var(--text-primary);
+                border: var(--line-weight) solid var(--line-secondary);
             }
 
             .button-secondary:hover {
-                background: #edf2f7;
+                background: var(--blueprint-bg);
+                border-color: var(--line-primary);
             }
 
             .order-details {
-                background: #f7fafc;
-                border-left: 4px solid #7eb3d3;
+                background: white;
+                border-left: 4px solid var(--line-secondary);
                 padding: 20px;
                 border-radius: 8px;
                 margin: 40px 0;
@@ -96,15 +101,17 @@
             }
 
             .order-details h3 {
+                font-family: var(--font-technical);
                 font-size: 18px;
                 font-weight: 700;
-                color: #1a202c;
+                color: var(--text-primary);
                 margin-bottom: 12px;
             }
 
             .order-details p {
+                font-family: var(--font-blueprint);
                 font-size: 14px;
-                color: #4a5568;
+                color: var(--text-secondary);
                 margin: 0;
                 line-height: 1.8;
             }
@@ -112,21 +119,21 @@
 @endsection
 
 @section('content')
-    <div class="success-container">
-        <div class="success-icon">
+    <div class="success-container" data-aos="fade-up">
+        <div class="success-icon" data-aos="zoom-in" data-aos-delay="100">
             <i class="fa-duotone fa-thin fa-circle-check" style="font-size: 60px; color: white;"></i>
         </div>
 
-        <h1>Order Complete!</h1>
+        <h1 data-aos="fade-up" data-aos-delay="200">Order Complete!</h1>
 
-        <p>
+        <p data-aos="fade-up" data-aos-delay="300">
             Thank you for your purchase! Your domains have been registered and are now active.
-            We've sent a confirmation email to <strong>{{ auth()->user()->email }}</strong>.
+            We've sent a confirmation email to <strong style="color: var(--text-primary);">{{ auth()->user()->email }}</strong>.
         </p>
 
-        <div class="order-details">
+        <div class="order-details" data-aos="fade-up" data-aos-delay="400">
             <h3>
-                <i class="fa-duotone fa-thin fa-circle-info" style="color: #7eb3d3; margin-right: 8px;"></i>
+                <i class="fa-duotone fa-thin fa-circle-info" style="color: var(--line-secondary); margin-right: 8px;"></i>
                 What's Next?
             </h3>
             <p>
@@ -137,7 +144,7 @@
             </p>
         </div>
 
-        <div class="button-group">
+        <div class="button-group" data-aos="fade-up" data-aos-delay="500">
             <a href="/admin" class="button button-primary">
                 <i class="fa-duotone fa-thin fa-gauge"></i>
                 Go to Dashboard

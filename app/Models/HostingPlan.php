@@ -28,10 +28,12 @@ class HostingPlan extends Model
         'is_active',
         'is_featured',
         'sort_order',
+        'metadata',
     ];
 
     protected $casts = [
         'features' => 'array',
+        'metadata' => 'array',
         'monthly_price' => 'decimal:2',
         'yearly_price' => 'decimal:2',
         'ssl_included' => 'boolean',
@@ -61,5 +63,26 @@ class HostingPlan extends Model
 
         $monthlyTotal = $this->monthly_price * 12;
         return (($monthlyTotal - $this->yearly_price) / $monthlyTotal) * 100;
+    }
+
+    /**
+     * Get the DigitalOcean droplet size slug for provisioning
+     */
+    public function getDigitalOceanSizeAttribute(): ?string
+    {
+        return $this->metadata['digitalocean_size'] ?? null;
+    }
+
+    /**
+     * Get server specifications
+     */
+    public function getServerSpecsAttribute(): array
+    {
+        return [
+            'vcpu' => $this->metadata['vcpu'] ?? 1,
+            'ram_gb' => $this->metadata['ram_gb'] ?? 1,
+            'storage_gb' => $this->metadata['storage_gb'] ?? 25,
+            'bandwidth_tb' => $this->metadata['bandwidth_tb'] ?? 1,
+        ];
     }
 }

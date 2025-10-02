@@ -38,6 +38,13 @@ return [
     'namecom' => [
         'username' => env('NAMECOM_USERNAME'),
         'token' => env('NAMECOM_TOKEN'),
+        'mock_mode' => env('NAMECOM_MOCK_MODE', false),
+    ],
+
+    'stripe' => [
+        'key' => env('STRIPE_KEY'),
+        'secret' => env('STRIPE_SECRET'),
+        'webhook_secret' => env('STRIPE_WEBHOOK_SECRET'),
     ],
 
 ];

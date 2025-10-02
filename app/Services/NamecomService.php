@@ -11,11 +11,13 @@ class NamecomService
     private string $baseUrl = 'https://api.name.com/v4';
     private string $username;
     private string $token;
+    private bool $mockMode;
 
     public function __construct()
     {
         $this->username = config('services.namecom.username');
         $this->token = config('services.namecom.token');
+        $this->mockMode = config('services.namecom.mock_mode', false);
     }
 
     /**
@@ -29,7 +31,7 @@ class NamecomService
             'tlds' => $tlds,
         ];
 
-        return $this->makeRequest('POST', $endpoint, $payload, 'search');
+        return $this->makeRequest('POST', $endpoint, $payload, 'search') ?? [];
     }
 
     /**
@@ -222,6 +224,11 @@ class NamecomService
         ?int $domainId = null,
         ?int $orderId = null
     ): ?array {
+        // Return mock data if in mock mode
+        if ($this->mockMode) {
+            return $this->getMockResponse($transactionType, $endpoint, $payload);
+        }
+
         $url = $this->baseUrl . $endpoint;
 
         try {
@@ -323,5 +330,74 @@ class NamecomService
                 'error' => $e->getMessage(),
             ]);
         }
+    }
+
+    /**
+     * Get mock response for testing
+     */
+    private function getMockResponse(string $transactionType, string $endpoint, ?array $payload): ?array
+    {
+        Log::info('Name.com API Mock Mode', [
+            'type' => $transactionType,
+            'endpoint' => $endpoint,
+            'payload' => $payload,
+        ]);
+
+        return match($transactionType) {
+            'search' => [
+                'results' => [
+                    [
+                        'domainName' => 'example.com',
+                        'purchasable' => true,
+                        'premium' => false,
+                        'purchasePrice' => 1200,
+                        'purchaseType' => 'registration',
+                        'renewalPrice' => 1200,
+                    ],
+                    [
+                        'domainName' => 'example.net',
+                        'purchasable' => true,
+                        'premium' => false,
+                        'purchasePrice' => 1400,
+                        'purchaseType' => 'registration',
+                        'renewalPrice' => 1400,
+                    ],
+                ],
+            ],
+            'pricing' => [
+                'domainName' => $payload['domain'] ?? 'test.com',
+                'purchasable' => true,
+                'premium' => false,
+                'purchasePrice' => 1200,
+                'renewalPrice' => 1200,
+            ],
+            'get_domain' => [
+                'domainName' => 'test.com',
+                'nameservers' => ['ns1.name.com', 'ns2.name.com'],
+                'locked' => false,
+                'autoRenew' => true,
+            ],
+            'create_dns_record', 'update_dns_record' => [
+                'id' => rand(1000, 9999),
+                'domainName' => 'test.com',
+                'host' => $payload['host'] ?? '@',
+                'type' => $payload['type'] ?? 'A',
+                'answer' => $payload['answer'] ?? '157.245.211.127',
+                'ttl' => $payload['ttl'] ?? 300,
+            ],
+            'list_dns_records' => [
+                'records' => [
+                    [
+                        'id' => 1001,
+                        'domainName' => 'test.com',
+                        'host' => '@',
+                        'type' => 'A',
+                        'answer' => '157.245.211.127',
+                        'ttl' => 300,
+                    ],
+                ],
+            ],
+            default => ['success' => true, 'message' => 'Mock response'],
+        };
     }
 }

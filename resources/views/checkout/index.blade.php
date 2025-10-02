@@ -3,7 +3,6 @@
 @section('title', 'Checkout - sbarron.com')
 
 @php
-    $hideNav = true;
     $hideFooter = true;
 @endphp
 

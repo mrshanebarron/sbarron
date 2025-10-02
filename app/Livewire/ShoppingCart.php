@@ -36,9 +36,9 @@ class ShoppingCart extends Component
         $this->isOpen = true;
     }
 
-    public function removeItem(string $domain)
+    public function removeItem(string $key)
     {
-        unset($this->items[$domain]);
+        unset($this->items[$key]);
         session()->put('cart', $this->items);
     }
 
@@ -75,7 +75,13 @@ class ShoppingCart extends Component
             return;
         }
 
-        return redirect()->route('checkout');
+        // Require authentication before checkout
+        if (!auth()->check()) {
+            session()->flash('message', 'Please create an account or login to complete your purchase.');
+            return redirect()->route('filament.admin.auth.register');
+        }
+
+        return redirect()->route('checkout.redirect');
     }
 
     public function render()

@@ -51,6 +51,8 @@ class DomainSearch extends Component
                             'available' => $result['purchasable'] ?? false,
                             'price' => $result['purchasePrice'] ?? 0,
                             'tld' => $result['tld'] ?? '',
+                            'premium' => $result['premium'] ?? false,
+                            'purchaseType' => $result['purchaseType'] ?? 'registration',
                         ];
                     })
                     ->toArray();

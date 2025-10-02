@@ -27,8 +27,23 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login()
+            ->brandName('sbarron.com')
+            ->brandLogo(fn () => view('components.logo'))
+            ->authGuard('web')
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => [
+                    50 => '236, 244, 248',
+                    100 => '217, 233, 242',
+                    200 => '179, 211, 229',
+                    300 => '141, 189, 217',
+                    400 => '126, 179, 211',
+                    500 => '107, 149, 179',
+                    600 => '86, 119, 143',
+                    700 => '64, 89, 107',
+                    800 => '43, 60, 72',
+                    900 => '21, 30, 36',
+                    950 => '11, 15, 18',
+                ],
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
