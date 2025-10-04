@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Service Worker Cache</title>
+    <style>
+        body {
+            font-family: monospace;
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            background: #6b5b73;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        button:hover {
+            background: #7eb3d3;
+        }
+        #status {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .success { background: #f0fdf4; color: #22c55e; }
+        .error { background: #fef2f2; color: #dc2626; }
+    </style>
+</head>
+<body>
+    <h1>Clear Service Worker Cache</h1>
+    <p>This will unregister all service workers and clear the cache for sbarron.test</p>
+
+    <button onclick="clearEverything()">Clear All Caches & Reload</button>
+
+    <div id="status"></div>
+
+    <script>
+        async function clearEverything() {
+            const status = document.getElementById('status');
+            status.textContent = 'Clearing...';
+            status.className = '';
+
+            try {
+                // Unregister all service workers
+                if ('serviceWorker' in navigator) {
+                    const registrations = await navigator.serviceWorker.getRegistrations();
+                    for (let registration of registrations) {
+                        await registration.unregister();
+                        console.log('Unregistered service worker:', registration);
+                    }
+                }
+
+                // Clear all caches
+                if ('caches' in window) {
+                    const cacheNames = await caches.keys();
+                    for (let cacheName of cacheNames) {
+                        await caches.delete(cacheName);
+                        console.log('Deleted cache:', cacheName);
+                    }
+                }
+
+                status.textContent = 'Success! All caches cleared. Reloading in 2 seconds...';
+                status.className = 'success';
+
+                setTimeout(() => {
+                    window.location.href = '/vision';
+                }, 2000);
+
+            } catch (error) {
+                status.textContent = 'Error: ' + error.message;
+                status.className = 'error';
+                console.error('Cache clear error:', error);
+            }
+        }
+    </script>
+</body>
+</html>

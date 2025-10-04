@@ -48,6 +48,10 @@ Route::get('/components/showcase', function () {
     return view('components-showcase');
 })->name('components.showcase');
 
+Route::get('/vision', function () {
+    return view('vision');
+})->name('vision');
+
 Route::get('/hosting', [App\Http\Controllers\HostingController::class, 'index'])->name('hosting.index');
 Route::get('/hosting/{slug}', [App\Http\Controllers\HostingController::class, 'show'])->name('hosting.show');
 Route::post('/hosting/{slug}/order', [App\Http\Controllers\HostingController::class, 'order'])->name('hosting.order');

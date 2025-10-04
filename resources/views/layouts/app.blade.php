@@ -235,11 +235,13 @@
             top: 70px;
             left: 0;
             right: 0;
-            background: rgba(248, 250, 252, 0.98);
+            background: #f3eee8;
             backdrop-filter: blur(12px);
             border-bottom: 2px solid var(--line-primary);
             z-index: 999;
-            padding: 20px 0;
+            padding: 12px 0;
+            max-height: calc(100vh - 70px);
+            overflow-y: auto;
         }
 
         .mobile-menu.active {
@@ -247,16 +249,18 @@
         }
 
         .mobile-menu a {
-            display: block;
-            padding: 16px 40px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 24px;
             color: var(--text-secondary);
             text-decoration: none;
             font-family: var(--font-technical);
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid rgba(107, 91, 115, 0.1);
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid rgba(107, 91, 115, 0.08);
             transition: var(--transition);
         }
 
@@ -268,20 +272,27 @@
         .mobile-menu a.hire-me {
             background: var(--line-primary);
             color: white;
-            margin: 16px 40px 0;
+            margin: 12px 24px 12px 24px;
             border-radius: 8px;
             text-align: center;
             border-bottom: none;
+            padding: 16px 24px;
+            justify-content: center;
+        }
+
+        .mobile-menu a.hire-me:hover {
+            background: var(--line-primary);
+            opacity: 0.9;
         }
 
         /* Mobile Responsive Design */
         @media (max-width: 768px) {
             .mobile-menu-toggle {
-                display: block;
+                display: block !important;
             }
 
             .navbar-blueprint .nav-links {
-                display: none;
+                display: none !important;
             }
 
             .navbar-blueprint .brand-name {
@@ -445,52 +456,18 @@
                     </div>
                 </a>
                 <!-- Navigation Links -->
-                <div style="display: flex; gap: 48px; align-items: center;">
-                    <!-- Consulting Services Dropdown -->
-                    <div class="nav-item">
-                        <a href="/#services" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent; cursor: pointer;">
-                            <i class="fa-duotone fa-thin fa-briefcase" style="font-size: 16px;"></i>
-                            Consulting
-                            <i class="fa-duotone fa-thin fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="/#services" onclick="this.closest('.nav-item').style.pointerEvents='none'; setTimeout(() => this.closest('.nav-item').style.pointerEvents='auto', 100);">
-                                <i class="fa-duotone fa-thin fa-chess-king"></i>
-                                Strategic Consulting
-                            </a>
-                            <a href="/#services" onclick="this.closest('.nav-item').style.pointerEvents='none'; setTimeout(() => this.closest('.nav-item').style.pointerEvents='auto', 100);">
-                                <i class="fa-duotone fa-thin fa-code"></i>
-                                Development Services
-                            </a>
-                            <a href="/#approach" onclick="this.closest('.nav-item').style.pointerEvents='none'; setTimeout(() => this.closest('.nav-item').style.pointerEvents='auto', 100);">
-                                <i class="fa-duotone fa-thin fa-lightbulb"></i>
-                                My Approach
-                            </a>
-                            <a href="/#timeline" onclick="this.closest('.nav-item').style.pointerEvents='none'; setTimeout(() => this.closest('.nav-item').style.pointerEvents='auto', 100);">
-                                <i class="fa-duotone fa-thin fa-clock"></i>
-                                40 Years Experience
-                            </a>
-                        </div>
-                    </div>
+                <div class="nav-links" style="display: flex; gap: 48px; align-items: center;">
+                    <!-- Services -->
+                    <a href="/#services" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent;">
+                        <i class="fa-duotone fa-thin fa-briefcase" style="font-size: 16px;"></i>
+                        Services
+                    </a>
 
-                    <!-- Services Dropdown -->
-                    <div class="nav-item" style="display: none;">
-                        <a href="#" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent; cursor: pointer;">
-                            <i class="fa-duotone fa-thin fa-layer-group" style="font-size: 16px;"></i>
-                            Services
-                            <i class="fa-duotone fa-thin fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a href="/domains/search" onclick="this.closest('.nav-item').style.pointerEvents='none'; setTimeout(() => this.closest('.nav-item').style.pointerEvents='auto', 100);">
-                                <i class="fa-duotone fa-thin fa-globe"></i>
-                                Domain Registration
-                            </a>
-                            <a href="/hosting" onclick="this.closest('.nav-item').style.pointerEvents='none'; setTimeout(() => this.closest('.nav-item').style.pointerEvents='auto', 100);">
-                                <i class="fa-duotone fa-thin fa-server"></i>
-                                Managed Hosting
-                            </a>
-                        </div>
-                    </div>
+                    <!-- Approach -->
+                    <a href="/#approach" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent;">
+                        <i class="fa-duotone fa-thin fa-lightbulb" style="font-size: 16px;"></i>
+                        Approach
+                    </a>
 
                     <!-- Portfolio -->
                     <a href="/#portfolio" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent;">
@@ -498,10 +475,10 @@
                         Portfolio
                     </a>
 
-                    <!-- Laravel Components -->
-                    <a href="/components" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: none; align-items: center; gap: 8px; border-bottom: 2px solid transparent;">
-                        <i class="fa-duotone fa-thin fa-box" style="font-size: 16px;"></i>
-                        Components
+                    <!-- Vision System -->
+                    <a href="/vision" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-technical); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; padding: 12px 0; transition: var(--transition); display: flex; align-items: center; gap: 8px; border-bottom: 2px solid transparent;">
+                        <i class="fa-duotone fa-thin fa-brain-circuit" style="font-size: 16px;"></i>
+                        Vision
                     </a>
 
                     @auth
@@ -541,28 +518,20 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="/#services" onclick="closeMobileMenu()">
-            <i class="fa-duotone fa-thin fa-chess-king" style="font-size: 16px; margin-right: 12px;"></i>
-            Strategic Consulting
-        </a>
-        <a href="/#services" onclick="closeMobileMenu()">
-            <i class="fa-duotone fa-thin fa-code" style="font-size: 16px; margin-right: 12px;"></i>
-            Development Services
+            <i class="fa-duotone fa-thin fa-briefcase" style="font-size: 16px; margin-right: 12px;"></i>
+            Services
         </a>
         <a href="/#approach" onclick="closeMobileMenu()">
             <i class="fa-duotone fa-thin fa-lightbulb" style="font-size: 16px; margin-right: 12px;"></i>
-            My Approach
-        </a>
-        <a href="/#timeline" onclick="closeMobileMenu()">
-            <i class="fa-duotone fa-thin fa-clock" style="font-size: 16px; margin-right: 12px;"></i>
-            40 Years Experience
-        </a>
-        <a href="/domains/search" onclick="closeMobileMenu()">
-            <i class="fa-duotone fa-thin fa-globe" style="font-size: 16px; margin-right: 12px;"></i>
-            Domain Services
+            Approach
         </a>
         <a href="/#portfolio" onclick="closeMobileMenu()">
             <i class="fa-duotone fa-thin fa-laptop" style="font-size: 16px; margin-right: 12px;"></i>
             Portfolio
+        </a>
+        <a href="/vision" onclick="closeMobileMenu()">
+            <i class="fa-duotone fa-thin fa-brain-circuit" style="font-size: 16px; margin-right: 12px;"></i>
+            Vision System
         </a>
         @auth
         <a href="/dashboard" onclick="closeMobileMenu()">
